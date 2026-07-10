@@ -20,7 +20,6 @@ Real products designed and built end-to-end — currently in use or in active de
 |---|---|---|
 | ![](assets/refrest/hero.jpg) | **REFREST** — grocery delivery app; full process from persona to hi-fi UI | [View case study](projects/refrest.md) |
 | ![](assets/jobable/hero.jpg) | **JOBABLE** — job search & application platform, web + mobile | [View case study](projects/jobable.md) |
-| ![](assets/tacotruck/hero.jpg) | **TacoTruck** — food ordering app, wireframe through prototype | [View case study](projects/tacotruck.md) |
 | ![](assets/jones-road-audit/hero.jpg) | **Jones Road UX Audit** — heatmap-based UX audit & redesign exercise | [View case study](projects/jones-road-audit.md) |
 | ![](assets/archova/hero.jpg) | **ARCHOVA** — architectural visualization studio website | [View case study](projects/archova.md) |
 | ![](assets/vanscape/hero.jpg) | **Vanscape** — landscaping business website | [View case study](projects/vanscape.md) |
