@@ -14,6 +14,16 @@ Real products designed and built end-to-end — currently in use or in active de
 | ![](assets/bulava/storefront.jpg) | **Bulava.to** — luxury digital wedding invitation platform, with client site and admin portal | [View case study](projects/bulava.md) |
 | ![](assets/ambur-first/hero.jpg) | **Ambur First** — hyperlocal community app for the town of Ambur | [View case study](projects/ambur-first.md) |
 
+## Original iOS app concepts
+
+Ground-up concept designs, built directly in code (not Figma) and prototyped as real iOS screens. See the [live site](https://asdanish.github.io/ux-portfolio/) for the best viewing experience — these pages use a shared stylesheet that GitHub's file viewer won't render.
+
+| Project | What it is | Case study |
+|---|---|---|
+| ![](assets/railwake/live-tracking.jpg) | **RailWake** — live train tracking with a geo-alarm that wakes you before your stop | [View case study](https://asdanish.github.io/ux-portfolio/projects/railwake.html) |
+| ![](assets/fifty-by-ashhar-app/product-detail.jpg) | **Fifty By Ashhar Mobile** — native iOS shopping app extending the existing luxury footwear brand | [View case study](https://asdanish.github.io/ux-portfolio/projects/fifty-by-ashhar-app.html) |
+| ![](assets/drift/smart-alarm.jpg) | **Drift** — a calm sleep app with a gentle wake-window alarm and soundscape mixer | [View case study](https://asdanish.github.io/ux-portfolio/projects/drift.html) |
+
 ## UX case studies & design work
 
 | Project | What it is | Case study |

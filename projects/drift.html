@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drift — UX Portfolio</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="container project">
+  <a class="back" href="../index.html">&larr; Back to portfolio</a>
+
+  <h1>Drift</h1>
+  <p class="project-meta"><strong>Type:</strong> Concept design (UI exploration) &middot; <strong>Scope:</strong> iOS app, end-to-end</p>
+
+  <p>Falling asleep is hard, and most sleep apps only help you measure that fact rather than fix it — they log data but don't actually calm anyone down. Worse, a fixed-time alarm undoes whatever good sleep you did get: waking up mid deep-sleep-cycle at a rigid 7:00 AM leaves you groggier than waking a few minutes later at a naturally lighter point in the cycle. Drift is a concept for an iOS sleep and wind-down app built around two ideas: actively help someone relax into sleep (not just track it), and wake them gently within a window instead of jolting them awake at a fixed second.</p>
+
+  <h2>Onboarding &mdash; sleep goal setup</h2>
+  <p>A single, calm question — what time do you want to be asleep — sets the bedtime goal Drift builds everything else around. A fine-line orbit diagram stands in for the expected soft gradient blob, large serif time digits make the goal itself feel considered rather than a form field, and one primary action replaces the dense multi-screen setup flows most wellness apps open with.</p>
+  <img src="../assets/drift/onboarding.jpg" alt="Drift onboarding screen showing bedtime goal setup with a fine-line orbit diagram and large serif time picker">
+
+  <h2>Home (&ldquo;Tonight&rdquo;)</h2>
+  <p>The nightly home base: a countdown to bedtime rendered as the screen's hero number, the smart alarm window and current soundscape at a glance, one-tap sound shortcuts, and tonight's suggested wind-down session. Everything a person needs before bed is reachable without digging into settings.</p>
+  <img src="../assets/drift/home.jpg" alt="Drift home screen titled Tonight with a large glowing bedtime countdown, smart alarm window, and quick soundscape shortcuts">
+
+  <h2>Soundscape mixer</h2>
+  <p>This is one of Drift's two hallmark features, and it's treated as one: channel strips with tick-marked rails, glowing gradient-filled thumbs, and a gold-lit transport section give it the feel of a real hardware mixer rather than a stack of default range inputs. Users layer multiple sounds &mdash; rain, white noise, ocean waves, fireplace &mdash; and balance each one's level independently. A sleep timer fades the mix out automatically so it doesn't play all night.</p>
+  <img src="../assets/drift/soundscape-mixer.jpg" alt="Drift soundscape mixer styled as a hardware-inspired channel mixer with glowing sliders for rain, white noise, ocean waves, and fireplace">
+
+  <h2>Wind-down session player</h2>
+  <p>A full-screen guided breathing session built around a single bloom-lit orb in a field of negative space — concentric rings, layered glow, and an italic serif breath cue ("Breathe out") replace anything that reads as UI chrome. The interface intentionally has almost nothing to read or decide during the session &mdash; the point is to disengage, not to manage more controls.</p>
+  <img src="../assets/drift/wind-down-session.jpg" alt="Drift wind-down breathing session player with a glowing multi-ring breathing orb and italic serif breath cue">
+
+  <h2>Smart alarm setup</h2>
+  <p>The other hallmark feature, and the screen built to prove the point: the wake window isn't two plain time pickers, it's drawn as an arc gauge, with a steel-to-dawn gradient segment marking the 6:45&ndash;7:15 AM window against the full 6&ndash;8 AM range and the times themselves set in large ultra-light serif digits. A dedicated explainer card spells out the mechanism in plain language &mdash; Drift wakes you at the lightest point in your sleep cycle inside that window, never later than the window's end &mdash; so the value of the feature is understood, not just implied by a nice-looking control.</p>
+  <img src="../assets/drift/smart-alarm.jpg" alt="Drift smart alarm setup screen with an arc-gauge wake window visual from 6:45 to 7:15 AM and an explanation card">
+
+  <h2>Sleep stats dashboard</h2>
+  <p>The sleep score is the actual hero of this screen: a large glowing serif numeral inside a thin steel-to-gold gauge ring, not a small icon-sized badge. Supporting numbers (time asleep, time to fall asleep, wake-ups) and a simple seven-day bar trend stay deliberately quiet by comparison. One correlational insight at the bottom &mdash; nights with a wind-down session average more sleep &mdash; ties the stats back to the app's actual behavior-change features instead of leaving them as passive logging.</p>
+  <img src="../assets/drift/sleep-stats.jpg" alt="Drift sleep stats dashboard with a large glowing sleep score ring, key stats, and a weekly hours-asleep bar chart">
+
+  <h2>Notes</h2>
+  <ul>
+    <li><strong>Design system &mdash; &ldquo;Obsidian &amp; Champagne&rdquo;:</strong> the default dark-wellness-app look (blue-black base, soft purple-gradient blobs, a rainbow of pastel icon chips) was deliberately ruled out as the overused &ldquo;Calm clone&rdquo; aesthetic. Drift's base is a warm-neutral near-black ("obsidian") rather than blue-black, with exactly one real accent &mdash; a champagne gold &mdash; reserved for the numbers and moments that matter (sleep score, countdown, primary CTA), plus a quieter cool steel-blue for ambient/functional elements. A gold&rarr;coral &ldquo;dawn&rdquo; gradient is used only for wake/alarm moments, so it reads as an earned, meaningful transition rather than decoration. This restraint &mdash; one hue family doing emotional work, one doing structural work &mdash; is what gives the palette character instead of a generic dark-mode utility scheme.</li>
+    <li><strong>Typography has a point of view:</strong> UI chrome (nav, labels, buttons, tab bar) stays on the iOS system sans stack per HIG, so the shell reads as native iOS. But the numbers this app lives on &mdash; sleep score, bedtime countdown, wake-window times, the onboarding time picker &mdash; break from plain system-label styling entirely: they're set in Fraunces, an ultra-light (weight 300) serif, at hero scale (56&ndash;74px) with tabular figures and a tiny letter-spaced small-caps label beneath. That serif/sans contrast is Drift's typographic signature: numbers are treated as the emotional centerpiece, everything else is quiet utility.</li>
+    <li><strong>Materiality:</strong> cards use an inner top highlight plus soft ambient shadow rather than a flat bordered rectangle, and a very low-opacity fractal-noise overlay sits across every screen so surfaces read as fine matte grain instead of flat digital black &mdash; a texture borrowed more from premium hardware/OS surfaces (Apple's own Sleep app, high-end audio gear) than from a typical wellness template. The soundscape mixer and smart alarm carry this the furthest: tick-marked channel rails with glowing gradient thumbs, and a wake window drawn as an actual arc gauge instead of two plain time pickers or default range sliders.</li>
+    <li><strong>iOS HIG conventions:</strong> a persistent bottom tab bar (blurred, translucent) for the four top-level destinations, sheet-style push/modal navigation with a clear back affordance, safe-area-respecting spacing above the home indicator, 44pt+ touch targets on every slider handle and toggle, and semantic (not color-only) meaning &mdash; e.g. the smart alarm's explainer text, not just its color, carries the &ldquo;how it works&rdquo; information.</li>
+    <li><strong>Reduced motion:</strong> the breathing session's core interaction is a slow expand/contract animation, which is exactly the kind of motion <code>prefers-reduced-motion</code> exists for. In the real product this would degrade to a static, pulse-free orb with a text/haptic breath cue (&ldquo;Breathe out &middot; 4&rdquo;) instead of a moving shape, and the sleep-score ring, arc gauge, and progress bars would render in their final state instantly rather than animating in. None of the premium feel here depends on motion &mdash; the glow, gradient, and grain treatments are all static, so the reduced-motion version loses nothing but the breathing pace itself.</li>
+    <li>Designed directly in code as an iOS concept (HTML/CSS at native 390&times;844pt) rather than in Figma, so every screen shown here is a real, inspectable implementation rather than a static mockup.</li>
+  </ul>
+</div>
+</body>
+</html>

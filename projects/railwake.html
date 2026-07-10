@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RailWake — UX Portfolio</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="container project">
+  <a class="back" href="../index.html">&larr; Back to portfolio</a>
+
+  <h1>RailWake</h1>
+  <p class="project-meta"><strong>Type:</strong> Concept design (UI exploration) &middot; <strong>Scope:</strong> iOS app, end-to-end</p>
+
+  <p>India's live train-tracking apps ("Where is my Train" and its clones) are functional but stressful to use half-asleep: dense data-dumps, ad clutter, and a map you have to keep manually checking. The real failure mode isn't "where is the train" — it's falling asleep on a long overnight ride and sleeping through your stop. RailWake is a concept redesign built around a single hallmark feature: a geo-alarm that wakes you automatically when your train is a chosen distance or time from your station, so you never have to trust yourself to stay awake. Everything else — the map, the ETA, the coach diagram — is there to support that one moment of relief, not to compete with it.</p>
+
+  <h2>Home</h2>
+  <p>A calm entry point rather than a dashboard: one search field, a boarding-pass-style card for the journey already in progress, and a standalone gold CTA for the geo-alarm — deliberately the most visually prominent element on the screen, since it's the reason the app exists.</p>
+  <img src="../assets/railwake/home.jpg" alt="RailWake home screen with search, upcoming journey ticket, and geo-alarm entry point">
+
+  <h2>Live tracking</h2>
+  <p>A stylized night map (illustrated route, not real tiles) replaces the cluttered mapping widgets typical of this category. ETA, delay, and speed sit in large tabular numerals directly beneath the map so they can be read at a glance, half-conscious, without parsing a paragraph of status text.</p>
+  <img src="../assets/railwake/live-tracking.jpg" alt="RailWake live tracking screen with illustrated route map, train position, and ETA stats">
+
+  <h2>Geo-alarm setup — the hallmark flow</h2>
+  <p>This is the feature the whole app is built around. It opens as an iOS sheet over the live map (not a separate page) so the destination context is never lost. The core decision — how early to be woken — is offered two ways, time or distance, because "10 minutes before" and "5 km before" mean different things depending on how the train is running that day. A visible reassurance line up top ("we'll ring loudly and vibrate — even on silent") addresses the one anxiety this screen exists to solve: will it actually wake me up?</p>
+  <img src="../assets/railwake/geo-alarm-setup.jpg" alt="RailWake geo-alarm setup sheet with destination stop, time and distance controls, and alarm toggles">
+
+  <h2>Geo-alarm triggered — the hallmark moment</h2>
+  <p>The payoff screen, styled closer to a lock-screen alert than an in-app notification: full-bleed dark surface, one glanceable headline ("Wake up."), the single fact that matters (minutes to the stop), and two unmistakably large actions. No secondary navigation, no way to accidentally dismiss it with a stray tap — a groggy commuter has to make one deliberate choice.</p>
+  <img src="../assets/railwake/geo-alarm-triggered.jpg" alt="RailWake full-screen alarm-triggered alert with wake-up message, platform, and dismiss/snooze actions">
+
+  <h2>Coach &amp; platform info</h2>
+  <p>A problem specific to Indian long-distance rail: knowing where your coach will actually stop on the platform, in the dark, with two minutes to find it. This screen turns a mental math problem ("I'm in B3, engine enters from the north...") into a single diagram to glance at while walking toward the door.</p>
+  <img src="../assets/railwake/coach-platform.jpg" alt="RailWake coach and platform screen showing coach position on the platform and standing guidance">
+
+  <h2>Journey &amp; alarm history</h2>
+  <p>A record of past trips and fired alarms, so a nervous first-time user can see the alarm has worked reliably before they trust it on a trip that matters. Segmented into journeys and alarms so the log stays scannable rather than becoming another feed to sift through.</p>
+  <img src="../assets/railwake/history.jpg" alt="RailWake history screen listing past journeys and geo-alarm activity">
+
+  <h2>Notes</h2>
+  <ul>
+    <li><strong>Design system:</strong> generated with the ui-ux-pro-max design-system search (query: "transit travel utility calm trustworthy commuter"), which returned a "Public Transit Guide" palette (navy #2563EB, teal #0891B2, amber accent) that I deepened into a bespoke ink-navy / warm-paper / burnished-gold system — navy and paper read as calm and official (a boarding-pass, not a gadget), while gold is reserved almost exclusively for the geo-alarm so it stays visually distinct from ordinary navigation.</li>
+    <li><strong>Typography:</strong> three-part system — Fraunces (a warm display serif) for headline/emotional moments like the large title and the "Wake up." alert; Space Grotesk, a geometric sans with true tabular figures, for every numeral that matters operationally (ETA, delay, speed, distances, countdowns); and JetBrains Mono in small tracked caps for data tags (train numbers, timestamps, coach codes), giving the app a boarding-pass/ticket feel rather than a generic app-UI feel.</li>
+    <li><strong>iOS HIG conventions:</strong> large titles on Home/History, a bottom tab bar with 4 top-level destinations, the geo-alarm setup as a native-style sheet (grabber, blurred scrim, spring-friendly layout) rather than a pushed page, 44pt+ touch targets throughout, safe-area-aware spacing around the home indicator and status bar, and semantic color use (delay in red, on-time in green, always paired with text/icon, never color alone).</li>
+    <li>Designed directly in code (HTML/CSS at iPhone 14/13 logical size, 390&times;844) rather than in Figma — there is no Figma file for this concept; the screens shown are the actual rendered source, screenshotted with Playwright.</li>
+  </ul>
+</div>
+</body>
+</html>

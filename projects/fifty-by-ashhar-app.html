@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fifty By Ashhar Mobile — UX Portfolio</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="container project">
+  <a class="back" href="../index.html">&larr; Back to portfolio</a>
+
+  <h1>Fifty By Ashhar Mobile</h1>
+  <p class="project-meta"><strong>Type:</strong> Concept design (UI exploration) &middot; <strong>Scope:</strong> iOS shopping app, extending an existing brand</p>
+
+  <p>This extends the existing Fifty By Ashhar brand &mdash; storefront, admin dashboard, and workshop app already documented in <a href="fifty-by-ashhar.html">the existing Fifty By Ashhar case study</a> &mdash; into a native iOS shopping experience. The brief was to give the brand's small-batch, made-to-order footwear a mobile home that feels as considered as the product itself: full-bleed imagery, quiet chrome, and the same serif wordmark and warm neutral palette customers already know from the storefront.</p>
+
+  <h2>Home / Discover</h2>
+  <p>A full-bleed hero introduces the current drop with the brand's editorial tone &mdash; large Fraunces display type, a tracked-out "Edition of 50" label, and a quiet hairline progress indicator instead of a loud badge. Collections and the current edit sit below on a plain cream field, letting the product carry the page.</p>
+  <img src="../assets/fifty-by-ashhar-app/home.jpg" alt="Fifty By Ashhar app home screen">
+
+  <h2>Product detail</h2>
+  <p>The consumer-facing version of the admin's "33 of 50 reserved" drop tracker: a slim hairline-framed progress module with a plain-language note ("Edition closes soon"). Sizes use a minimal underline-style grid rather than default chips, and the single primary action &mdash; Add to Bag &mdash; is pinned to a safe-area-aware bottom bar.</p>
+  <img src="../assets/fifty-by-ashhar-app/product-detail.jpg" alt="Fifty By Ashhar app product detail screen">
+
+  <h2>Bag</h2>
+  <p>A straightforward review of reserved pairs before checkout. Each line item carries its own edition context ("No. 012 &middot; 17 pairs left") so scarcity stays visible without resorting to discount banners or promo codes &mdash; this brand doesn't discount.</p>
+  <img src="../assets/fifty-by-ashhar-app/bag.jpg" alt="Fifty By Ashhar app bag screen">
+
+  <h2>Checkout</h2>
+  <p>Presented as an iOS sheet rising over a dimmed Bag screen, with a grabber handle and a blurred, translucent footer holding the single "Place Order" action &mdash; standard HIG modal treatment for a focused, interruption-free payment step.</p>
+  <img src="../assets/fifty-by-ashhar-app/checkout.jpg" alt="Fifty By Ashhar app checkout sheet">
+
+  <h2>Order tracking</h2>
+  <p>Ties directly back to the brand's real workshop app: the same handcraft stages the workshop floor already tracks internally &mdash; Cut, Stitched, Finished, Shipped &mdash; surfaced here as a customer-facing timeline, with a "live at the workshop" indicator on the active stage to reinforce that each pair is made to order, not pulled from a warehouse shelf.</p>
+  <img src="../assets/fifty-by-ashhar-app/order-tracking.jpg" alt="Fifty By Ashhar app order tracking screen">
+
+  <h2>Account</h2>
+  <p>Order history (with the same in-workshop / delivered status language as tracking) plus saved size and fit preference, so a returning customer can reserve their next pair in a tap without re-entering sizing.</p>
+  <img src="../assets/fifty-by-ashhar-app/account.jpg" alt="Fifty By Ashhar app account screen">
+
+  <h2>Notes</h2>
+  <ul>
+    <li><strong>Brand-matching over generic e-commerce patterns:</strong> the app reuses the storefront's Fraunces serif wordmark, warm cream/ink palette, and terracotta accent rather than introducing a new visual identity. Typography carries most of the "luxury" signal &mdash; large serif display sizes for product moments paired with tiny tracked-out small-caps labels for meta info ("EDITION OF 50", "NO. 012") &mdash; over heavier UI chrome.</li>
+    <li><strong>Real product photography:</strong> screens use actual studio shots from the live Fifty By Ashhar store, blended into warm cream panels (multiply blend + soft radial vignette) so the white photo backgrounds melt into the UI rather than sitting in a hard rectangle.</li>
+    <li><strong>Restraint by design:</strong> one primary action per screen, hairline dividers instead of boxed cards, and no discount codes, star ratings, or gamified badges &mdash; a bespoke made-to-order brand doesn't need them.</li>
+    <li><strong>iOS-native conventions:</strong> SF-style system sans for UI chrome, a bottom tab bar, a real sheet modal (with grabber, blurred translucent footer, and scrim) for checkout, safe-area-aware spacing, and 44pt+ touch targets throughout.</li>
+    <li>Designed directly in code as an iOS concept (HTML/CSS at native 390&times;844pt) rather than in Figma, so every screen shown here is a real, inspectable layout rather than a static mockup.</li>
+  </ul>
+</div>
+</body>
+</html>
